@@ -26,6 +26,8 @@ function Gameboard() {
     );
     console.log(boardWithCellValues);
   };
+
+  return { getBoard, dropToken, printBoard };
 }
 
 function Cell() {
