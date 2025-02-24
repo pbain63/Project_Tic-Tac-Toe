@@ -19,6 +19,13 @@ function Gameboard() {
 
     if (!availableCells.length) return;
   };
+
+  const printBoard = () => {
+    const boardWithCellValues = board.map((row) =>
+      row.map((cell) => cell.getValue())
+    );
+    console.log(boardWithCellValues);
+  };
 }
 
 function Cell() {
