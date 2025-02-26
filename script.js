@@ -80,4 +80,6 @@ function GameController(
     switchPlayerTurn();
     printNewRound();
   }
+
+  printNewRound();
 }
