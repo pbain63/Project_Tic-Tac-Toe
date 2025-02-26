@@ -57,7 +57,11 @@ function GameController(
       name: playerTwoName,
       token: O,
     },
-  ]
+  ];
 
-  
+  const activePlayer = players[0];
+
+  const switchPlayerTurn = () => {
+    activePlayer = activePlayer === players[0] ? players[1] : players[0];
+  }
 }
