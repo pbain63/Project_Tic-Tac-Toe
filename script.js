@@ -76,6 +76,8 @@ function GameController(
     console.log(`Dropping ${getActivePlayer().name}'s token into column ${column}...`);
     board.dropToken(column, getActivePlayer().token);
 
-    
+
+    switchPlayerTurn();
+    printNewRound();
   }
 }
