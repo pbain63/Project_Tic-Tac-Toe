@@ -73,13 +73,18 @@ function GameController(
   };
 
   const playRound = (column) => {
-    console.log(`Dropping ${getActivePlayer().name}'s token into column ${column}...`);
+    console.log(
+      `Dropping ${getActivePlayer().name}'s token into column ${column}...`
+    );
     board.dropToken(column, getActivePlayer().token);
-
 
     switchPlayerTurn();
     printNewRound();
-  }
+  };
 
   printNewRound();
+
+  return { playRound, getActivePlayer };
 }
+
+const game = GameController();
