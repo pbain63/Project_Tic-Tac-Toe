@@ -18,6 +18,14 @@ function Gameboard() {
       .map((row) => row[column]);
 
     if (!availableCells.length) return;
+    //
+
+    const lowestRow = availableCells.length - 1;
+    board[lowestRow][column].addToken(player);
+
+    // const lowestRow = availableCells.length;
+    // board[lowestRow][column].addToken(player);
+    // board[rows][column].addToken(player);
   };
 
   const printBoard = () => {
@@ -51,15 +59,15 @@ function GameController(
   const players = [
     {
       name: playerOneName,
-      token: X,
+      token: "X",
     },
     {
       name: playerTwoName,
-      token: O,
+      token: "O",
     },
   ];
 
-  const activePlayer = players[0];
+  let activePlayer = players[0];
 
   const switchPlayerTurn = () => {
     activePlayer = activePlayer === players[0] ? players[1] : players[0];
