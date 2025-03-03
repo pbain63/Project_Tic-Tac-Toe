@@ -73,8 +73,8 @@ function GameController(
   };
 
   const checkForWin = () => {
-    
-  }  
+    const currentBoard = board.getBoard();
+  };
 
   const playRound = (column) => {
     console.log(
