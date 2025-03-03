@@ -12,20 +12,12 @@ function Gameboard() {
 
   const getBoard = () => board;
 
-  const dropToken = (column, player) => {
-    const availableCells = board
-      .filter((row) => row[column].getValue() === 0)
-      .map((row) => row[column]);
-
-    if (!availableCells.length) return;
-    //
-
-    const lowestRow = availableCells.length - 1;
-    board[lowestRow][column].addToken(player);
-
-    // const lowestRow = availableCells.length;
-    // board[lowestRow][column].addToken(player);
-    // board[rows][column].addToken(player);
+  const dropToken = (row, column, player) => {
+    if (board[row][column].getValue() === 0) {
+      board[row][column].addToken(player);
+      return true;
+    }
+    return false;
   };
 
   const printBoard = () => {
