@@ -74,6 +74,17 @@ function GameController(
 
   const checkForWin = () => {
     const currentBoard = board.getBoard();
+
+    // check rows for a win
+    for (let row = 0; row < 3; row++) {
+      if (
+        currentBoard[row][0].getValue() !== 0 &&
+        currentBoard[row][0].getValue() === currentBoard[row][1].getValue() &&
+        currentBoard[row][1].getValue() === currentBoard[row][2].getValue()
+      ) {
+        return true;
+      }
+    }
   };
 
   const playRound = (column) => {
