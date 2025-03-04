@@ -76,6 +76,9 @@ function GameController(
     const currentBoard = board.getBoard();
 
     // check rows for a win
+    // currentBoard[row][0] checks the leftmost cell in the row
+    // currentBoard[row][1] checks the middle cell in the row
+    // currentBoard[row][2] checks the rightmost cell in the row
     for (let row = 0; row < 3; row++) {
       if (
         currentBoard[row][0].getValue() !== 0 &&
@@ -85,6 +88,23 @@ function GameController(
         return true;
       }
     }
+
+    // Check columns for a win
+    // currentBoard[0][col] checks the top cell in the column.
+    // currentBoard[1][col] checks the middle cell in the column.
+    // currentBoard[2][col] checks the bottom cell in the column.
+
+    for (let col = 0; col < 3; col++) {
+      if (
+        currentBoard[0][col].getValue() !== 0 &&
+        currentBoard[0][col].getValue() === currentBoard[1][col].getValue() &&
+        currentBoard[1][col].getValue() === currentBoard[2][col].getValue()
+      ) {
+        return true;
+      }
+    }
+
+    
   };
 
   const playRound = (column) => {
