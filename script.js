@@ -123,6 +123,10 @@ function GameController(
     return false;
   };
 
+  const checkForDraw = () => {
+    const currentBoard = board.getBoard();
+  };
+
   const playRound = (column) => {
     console.log(
       `Dropping ${getActivePlayer().name}'s token into column ${column}...`
