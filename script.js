@@ -104,7 +104,23 @@ function GameController(
       }
     }
 
-    
+    // check diagonals for a win
+    if (
+      currentBoard[0][0].getValue() !== 0 &&
+      currentBoard[0][0].getValue() === currentBoard[1][1].getValue() &&
+      currentBoard[1][1].getValue() === currentBoard[2][2].getValue()
+    ) {
+      return true;
+    }
+
+    if (
+      currentBoard[0][2].getValue() !== 0 &&
+      currentBoard[0][2].getValue() === currentBoard[1][1].getValue() &&
+      currentBoard[1][1].getValue() === currentBoard[2][0].getValue()
+    ) {
+      return true;
+    }
+    return false;
   };
 
   const playRound = (column) => {
