@@ -125,6 +125,14 @@ function GameController(
 
   const checkForDraw = () => {
     const currentBoard = board.getBoard();
+    for (let row = 0; row < 3; row++) {
+      for (let col = 0; col < 3; col++) {
+        if (currentBorad[row][col].getValue() === 0) {
+          return false;
+        }
+      }
+    }
+    return true;
   };
 
   const playRound = (column) => {
