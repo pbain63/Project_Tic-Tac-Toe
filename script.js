@@ -160,4 +160,15 @@ function GameController(
   return { playRound, getActivePlayer };
 }
 
-const game = GameController();
+// Function to start the game in the browser console
+function startConsoleGame() {
+  const game = GameController();
+
+  const getMove = () => {
+    const input = prompt(`Enter row and column (0 to 2) separated by a comma:`);
+    if (input === null) {
+      console.log(`Game exited.`);
+      return;
+    }
+  };
+}
