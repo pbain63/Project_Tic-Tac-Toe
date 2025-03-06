@@ -141,6 +141,13 @@ function GameController(
         board.printBoard();
         console.log(`${getActivePlayer().name} wins!`);
         return true;
+      } else if (checkForDraw) {
+        board.printBoard();
+        console.log("It's a draw!");
+        return true;
+      } else {
+        switchPlayerTurn();
+        printNewRound();
       }
     }
   };
