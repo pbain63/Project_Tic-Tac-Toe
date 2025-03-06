@@ -151,8 +151,8 @@ function GameController(
       }
     } else {
       console.log("Invalid move. Try again.");
-      
     }
+    return false;
   };
 
   printNewRound();
