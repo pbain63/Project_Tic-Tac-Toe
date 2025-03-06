@@ -149,6 +149,9 @@ function GameController(
         switchPlayerTurn();
         printNewRound();
       }
+    } else {
+      console.log("Invalid move. Try again.");
+      
     }
   };
 
