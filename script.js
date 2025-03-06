@@ -135,14 +135,14 @@ function GameController(
     return true;
   };
 
-  const playRound = (column) => {
-    console.log(
-      `Dropping ${getActivePlayer().name}'s token into column ${column}...`
-    );
-    board.dropToken(column, getActivePlayer().token);
-
-    switchPlayerTurn();
-    printNewRound();
+  const playRound = (row, column) => {
+    if (board.dropToken(row, column, getActivePlayer().token)) {
+      if (checkForWin()) {
+        board.printBoard();
+        console.log(`${getActivePlayer().name} wins!`);
+        return true;
+      }
+    }
   };
 
   printNewRound();
