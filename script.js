@@ -185,3 +185,5 @@ function startConsoleGame() {
   getMove();
 }
 
+// Start the game
+startConsoleGame();
