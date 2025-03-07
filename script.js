@@ -127,7 +127,7 @@ function GameController(
     const currentBoard = board.getBoard();
     for (let row = 0; row < 3; row++) {
       for (let col = 0; col < 3; col++) {
-        if (currentBorad[row][col].getValue() === 0) {
+        if (currentBoard[row][col].getValue() === 0) {
           return false;
         }
       }
@@ -141,7 +141,7 @@ function GameController(
         board.printBoard();
         console.log(`${getActivePlayer().name} wins!`);
         return true;
-      } else if (checkForDraw) {
+      } else if (checkForDraw()) {
         board.printBoard();
         console.log("It's a draw!");
         return true;
@@ -167,12 +167,12 @@ function startConsoleGame() {
   const getMove = () => {
     const input = prompt(`Enter row and column (0 to 2) separated by a comma:`);
     if (input === null) {
-      console.log(`Game exited.`);
+      console.log("Game exited.");
       return;
     }
 
     const [row, col] = input.split(",").map(Number);
-    if (row >= 0 && row < 3 && col >= 0 && col > 3) {
+    if (row >= 0 && row < 3 && col >= 0 && col < 3) {
       const gameOver = game.playRound(row, col);
       if (!gameOver) {
         getMove();
