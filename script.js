@@ -170,5 +170,18 @@ function startConsoleGame() {
       console.log(`Game exited.`);
       return;
     }
+
+    const [row, col] = input.split(",").map(Number);
+    if (row >= 0 && row < 3 && col >= 0 && col > 3) {
+      const gameOver = game.playRound(row, col);
+      if (!gameOver) {
+        getMove();
+      }
+    } else {
+      console.log("Invalid input. Please enter numbers between 0 and 2.");
+      getMove();
+    }
   };
+  getMove();
 }
+
