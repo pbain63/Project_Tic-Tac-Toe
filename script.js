@@ -20,7 +20,13 @@ function Gameboard() {
     return false;
   };
 
-  
+  const resetBoard = () => {
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < columns; j++) {
+        board[i][j].addToken(0);
+      }
+    }
+  };
 
   return { getBoard, dropToken, printBoard };
 }
