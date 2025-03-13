@@ -43,10 +43,7 @@ function Cell() {
   return { addToken, getValue };
 }
 
-function GameController(
-  playerOneName = "Player One",
-  playerTwoName = "Player Two"
-) {
+function GameController(playerOneName, playerTwoName) {
   const board = Gameboard();
 
   const players = [
