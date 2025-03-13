@@ -28,7 +28,7 @@ function Gameboard() {
     }
   };
 
-  return { getBoard, dropToken, printBoard };
+  return { getBoard, dropToken, resetBoard };
 }
 
 function Cell() {
