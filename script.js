@@ -66,11 +66,6 @@ function GameController(playerOneName, playerTwoName) {
 
   const getActivePlayer = () => activePlayer;
 
-  const printNewRound = () => {
-    board.printBoard();
-    console.log(`${getActivePlayer().name}'s turn.`);
-  };
-
   const checkForWin = () => {
     const currentBoard = board.getBoard();
 
