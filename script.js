@@ -58,6 +58,7 @@ function GameController(playerOneName, playerTwoName) {
   ];
 
   let activePlayer = players[0];
+  let gameOver = false;
 
   const switchPlayerTurn = () => {
     activePlayer = activePlayer === players[0] ? players[1] : players[0];
