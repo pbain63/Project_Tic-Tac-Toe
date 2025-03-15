@@ -132,9 +132,8 @@ function GameController(playerOneName, playerTwoName) {
   const playRound = (row, column) => {
     if (board.dropToken(row, column, getActivePlayer().token)) {
       if (checkForWin()) {
-        board.printBoard();
-        console.log(`${getActivePlayer().name} wins!`);
-        return true;
+        gameOver = true;
+        return `${getActivePlayer().name} wins!`;
       } else if (checkForDraw()) {
         board.printBoard();
         console.log("It's a draw!");
