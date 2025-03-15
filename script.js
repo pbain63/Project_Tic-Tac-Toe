@@ -156,10 +156,12 @@ function GameController(playerOneName, playerTwoName) {
   };
 
   const updateUI = () => {
+    const currentBoard = board.getBoard();
+    const boardElement = document.querySelector(".board");
+    const statusElement = document.querySelector(".status");
+  
     
-  } 
-
-
+  };
 
   return { playRound, getActivePlayer };
 }
