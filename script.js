@@ -130,6 +130,7 @@ function GameController(playerOneName, playerTwoName) {
   };
 
   const playRound = (row, column) => {
+    // if (gameOver) return "Game over. Please reset the game.";
     if (board.dropToken(row, column, getActivePlayer().token)) {
       if (checkForWin()) {
         gameOver = true;
@@ -141,10 +142,10 @@ function GameController(playerOneName, playerTwoName) {
         switchPlayerTurn();
         return `${getActivePlayer().name} turn`;
       }
-    } else {
-      console.log("Invalid move. Try again.");
     }
-    return false;
+    // else {
+    //   return "Invalid move. Try again!";
+    // }
   };
 
   printNewRound();
