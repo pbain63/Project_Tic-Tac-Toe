@@ -139,7 +139,7 @@ function GameController(playerOneName, playerTwoName) {
         return "It's a draw!";
       } else {
         switchPlayerTurn();
-        printNewRound();
+        return `${getActivePlayer().name} turn`;
       }
     } else {
       console.log("Invalid move. Try again.");
