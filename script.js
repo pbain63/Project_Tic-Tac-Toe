@@ -148,7 +148,7 @@ function GameController(playerOneName, playerTwoName) {
     // }
   };
 
-  printNewRound();
+
 
   return { playRound, getActivePlayer };
 }
