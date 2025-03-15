@@ -155,7 +155,9 @@ function GameController(playerOneName, playerTwoName) {
     updateUI();
   };
 
-
+  const updateUI = () => {
+    
+  } 
 
 
 
