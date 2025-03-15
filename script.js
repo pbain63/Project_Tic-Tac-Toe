@@ -135,9 +135,8 @@ function GameController(playerOneName, playerTwoName) {
         gameOver = true;
         return `${getActivePlayer().name} wins!`;
       } else if (checkForDraw()) {
-        board.printBoard();
-        console.log("It's a draw!");
-        return true;
+        gameOver = true;
+        return "It's a draw!";
       } else {
         switchPlayerTurn();
         printNewRound();
