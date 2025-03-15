@@ -160,7 +160,13 @@ function GameController(playerOneName, playerTwoName) {
     const boardElement = document.querySelector(".board");
     const statusElement = document.querySelector(".status");
   
-    
+    // update board
+    boardElement.innerHTML = "";
+    currentBoard.forEach((row, rowIndex) => {
+      row.forEach((cell, colIndex) => {
+        
+      })
+    })
   };
 
   return { playRound, getActivePlayer };
