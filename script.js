@@ -148,6 +148,15 @@ function GameController(playerOneName, playerTwoName) {
     // }
   };
 
+  const resetGame = () => {
+    board.resetBoard();
+    activePlayer = players[0];
+    gameOver = false;
+    updateUI();
+  };
+
+
+
 
 
   return { playRound, getActivePlayer };
