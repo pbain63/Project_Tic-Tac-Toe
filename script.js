@@ -177,6 +177,13 @@ function GameController(playerOneName, playerTwoName) {
         boardElement.appendChild(cellElement);
       });
     });
+
+    // update status
+    if (gameOver) {
+      statusElement.textContent = statusElement.textContent;
+    } else {
+      statusElement.textContent = `${getActivePlayer().name}'s turn`;
+    }
   };
 
   return { playRound, getActivePlayer };
