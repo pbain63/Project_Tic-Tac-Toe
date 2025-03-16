@@ -186,7 +186,7 @@ function GameController(playerOneName, playerTwoName) {
     }
   };
 
-  return { playRound, getActivePlayer };
+  return { playRound, resetGame, updateUI };
 }
 
 // Function to start the game in the browser console
