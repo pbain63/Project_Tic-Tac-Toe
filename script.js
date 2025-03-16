@@ -167,6 +167,8 @@ function GameController(playerOneName, playerTwoName) {
 
         const cellElement = document.createElement("div");
         cellElement.classList.add("cell");
+        cellElement.textContent = cell.getValue() === 0 ? "" : cell.getValue();
+        
       })
     })
   };
