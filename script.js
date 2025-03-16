@@ -166,6 +166,7 @@ function GameController(playerOneName, playerTwoName) {
       row.forEach((cell, colIndex) => {
 
         const cellElement = document.createElement("div");
+        cellElement.classList.add("cell");
       })
     })
   };
