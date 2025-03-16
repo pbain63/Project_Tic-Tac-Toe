@@ -164,7 +164,8 @@ function GameController(playerOneName, playerTwoName) {
     boardElement.innerHTML = "";
     currentBoard.forEach((row, rowIndex) => {
       row.forEach((cell, colIndex) => {
-        
+
+        const cellElement = document.createElement("div");
       })
     })
   };
