@@ -196,5 +196,7 @@ let game;
 document.querySelector(".start-button").addEventListener("click", () => {
   const player1Name = document.getElementById("player1").value || "Player One";
   const player2Name = document.getElementById("player2").value || "Player Two";
-  
+
+  // Hide the form and show the board
+  document.querySelector(".player-form").style.display = "none";
 })
