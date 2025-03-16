@@ -159,18 +159,23 @@ function GameController(playerOneName, playerTwoName) {
     const currentBoard = board.getBoard();
     const boardElement = document.querySelector(".board");
     const statusElement = document.querySelector(".status");
-  
+
     // update board
     boardElement.innerHTML = "";
     currentBoard.forEach((row, rowIndex) => {
       row.forEach((cell, colIndex) => {
-
         const cellElement = document.createElement("div");
         cellElement.classList.add("cell");
         cellElement.textContent = cell.getValue() === 0 ? "" : cell.getValue();
-        
-      })
-    })
+        if (!gameOver && cell.getValue() === 0) {
+          cellElement.addEventListener("click", () => {
+            const result = playRound(rowIndex, colIndex);
+            statusElement.textContent = result;
+            updateUI();
+          });
+        }
+      });
+    });
   };
 
   return { playRound, getActivePlayer };
