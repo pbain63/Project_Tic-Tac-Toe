@@ -189,30 +189,10 @@ function GameController(playerOneName, playerTwoName) {
   return { playRound, resetGame, updateUI };
 }
 
-// Function to start the game in the browser console
-function startConsoleGame() {
-  const game = GameController();
+// initialize the game
+let game;
 
-  const getMove = () => {
-    const input = prompt(`Enter row and column (0 to 2) separated by a comma:`);
-    if (input === null) {
-      console.log("Game exited.");
-      return;
-    }
-
-    const [row, col] = input.split(",").map(Number);
-    if (row >= 0 && row < 3 && col >= 0 && col < 3) {
-      const gameOver = game.playRound(row, col);
-      if (!gameOver) {
-        getMove();
-      }
-    } else {
-      console.log("Invalid input. Please enter numbers between 0 and 2.");
-      getMove();
-    }
-  };
-  getMove();
-}
-
-// Start the game
-startConsoleGame();
+// Add event listener for start button 
+document.querySelector(".start-button").addEventListener("click", () => {
+  
+})
