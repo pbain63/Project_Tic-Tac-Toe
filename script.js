@@ -174,6 +174,7 @@ function GameController(playerOneName, playerTwoName) {
             updateUI();
           });
         }
+        boardElement.appendChild(cellElement);
       });
     });
   };
