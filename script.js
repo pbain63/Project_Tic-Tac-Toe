@@ -201,5 +201,8 @@ document.querySelector(".start-button").addEventListener("click", () => {
   document.querySelector(".player-form").style.display = "none";
   document.querySelector(".board").style.display = "grid";
   document.querySelector(".reset-button").style.display = "block";
-  
-})
+
+  // initialize the game with player names
+  game = GameController(player1Name, player2Name);
+  game.updateUI();
+});
