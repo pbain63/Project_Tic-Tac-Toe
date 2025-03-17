@@ -206,3 +206,8 @@ document.querySelector(".start-button").addEventListener("click", () => {
   game = GameController(player1Name, player2Name);
   game.updateUI();
 });
+
+// Add event listener for reset button 
+document.querySelector(".reset-button").addEventListener("click", () => {
+  game.resetGame();
+});
