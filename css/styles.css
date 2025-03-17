@@ -20,6 +20,12 @@ h1 {
   margin-bottom: 20px;
 }
 
+.player-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
