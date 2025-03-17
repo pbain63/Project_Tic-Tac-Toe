@@ -26,6 +26,15 @@ h1 {
   gap: 10px;
   margin-bottom: 20px;
 }
+
+.player-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
