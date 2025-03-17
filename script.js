@@ -192,7 +192,7 @@ function GameController(playerOneName, playerTwoName) {
 // initialize the game
 let game;
 
-// Add event listener for start button 
+// Add event listener for start button
 document.querySelector(".start-button").addEventListener("click", () => {
   const player1Name = document.getElementById("player1").value || "Player One";
   const player2Name = document.getElementById("player2").value || "Player Two";
@@ -207,7 +207,9 @@ document.querySelector(".start-button").addEventListener("click", () => {
   game.updateUI();
 });
 
-// Add event listener for reset button 
+// Add event listener for reset button
 document.querySelector(".reset-button").addEventListener("click", () => {
   game.resetGame();
 });
+
+game.resetGame();
