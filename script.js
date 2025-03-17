@@ -200,4 +200,6 @@ document.querySelector(".start-button").addEventListener("click", () => {
   // Hide the form and show the board
   document.querySelector(".player-form").style.display = "none";
   document.querySelector(".board").style.display = "grid";
+  document.querySelector(".reset-button").style.display = "block";
+  
 })
