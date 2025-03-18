@@ -94,3 +94,14 @@ h1 {
 .reset-button:hover {
   background-color: #0056b3;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.love {
+  color: red;
+}
