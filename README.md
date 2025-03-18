@@ -1,5 +1,5 @@
 # Project_Tic-Tac-Toe
-Created a new repository about Tic-Tac-Toe game
+The "Tic-Tac-Toe App" allows users to input the names of two players or play by default. The game shows wins or draws and resets the game to play again.
 
 
 Live preview link:
