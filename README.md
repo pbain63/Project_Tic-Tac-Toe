@@ -4,9 +4,9 @@ A browser-based Tic Tac Toe game built with HTML5, CSS3, and JavaScript, followi
 
 Tic Tac Toe Screenshot:
 
-![Alt text](/assets/Tic%20Tac%20Toe%201.png?raw=true "TTT 1")           ![Alt text](/assets/Tic%20Tac%20Toe%202.png?raw=true "TTT 2")
+![Alt text](/assets/Tic%20Tac%20Toe%201.png?raw=true "TTT 1")          
 
-<!-- ![Alt text](/assets/Tic%20Tac%20Toe%202.png?raw=true "TTT 2") -->
+![Alt text](/assets/Tic%20Tac%20Toe%202.png?raw=true "TTT 2")
 
 ![Alt text](/assets/Tic%20Tac%20Toe%203.png?raw=true "TTT 3")
 
@@ -41,9 +41,10 @@ git clone https://github.com/pbain63/tic-tac-toe.git
 
 
 tic-tac-toe/  
-├── assets                      
+├── assets   
+
 ├── index.html          # Main HTML structure  
-├── style.css           # Styling  
+├── css ──style.css     # Styling  
 ├── script.js           # Game logic & DOM handling  
 └── README.md  
 
