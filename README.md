@@ -2,6 +2,11 @@
 
 A browser-based Tic Tac Toe game built with HTML5, CSS3, and JavaScript, following modular design principles.
 
+### Live Demo:
+
+https://pbain63.github.io/Project_Tic-Tac-Toe/
+
+
 Tic Tac Toe Screenshot:
 
 ![Alt text](/assets/Tic%20Tac%20Toe%201.png?raw=true "TTT 1")          
@@ -58,9 +63,6 @@ DOM manipulation: Dynamically updated the UI based on game state.
 
 Event delegation: Efficiently handled click events for game squares.
 
-### Live Demo:
-
-https://pbain63.github.io/Project_Tic-Tac-Toe/
 
 
 Technologies: HTML5, CSS3, JavaScript
