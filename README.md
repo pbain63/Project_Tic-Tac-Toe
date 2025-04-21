@@ -14,7 +14,7 @@ A browser-based Tic Tac Toe game built with HTML, CSS, and JavaScript, following
 ✅ Minimal global code using factory functions and IIFE modules.
 ✅ DOM manipulation to dynamically update the game board.
 
-### How It Works
+## How It Works
 
 GameBoard: Manages the board state (3x3 array) and validates moves.
 
@@ -28,7 +28,7 @@ Display Controller: Renders the board and handles DOM events.
 Clone the repo:
 
 sh
-git clone https://github.com/your-username/tic-tac-toe.git
+git clone https://github.com/pbain63/tic-tac-toe.git
 Open index.html in your browser.
 
 ## Code Structure
