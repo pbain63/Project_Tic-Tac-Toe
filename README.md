@@ -42,7 +42,6 @@ git clone https://github.com/pbain63/tic-tac-toe.git
 
 tic-tac-toe/  
 ├── assets
-
 ├── index.html          # Main HTML structure  
 ├── style.css           # Styling  
 ├── script.js           # Game logic & DOM handling  
@@ -58,7 +57,7 @@ DOM manipulation: Dynamically updated the UI based on game state.
 
 Event delegation: Efficiently handled click events for game squares.
 
-Live Demo:
+### Live Demo:
 
 https://pbain63.github.io/Project_Tic-Tac-Toe/
 
