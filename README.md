@@ -2,7 +2,9 @@
 
 A browser-based Tic Tac Toe game built with HTML5, CSS3, and JavaScript, following modular design principles.
 
-<!-- Tic Tac Toe Screenshot: -->
+Tic Tac Toe Screenshot:
+
+![Alt text](/assets/Tic%20Tac%20Toe%201.png?raw=true "Op T 1")
 
 
 ## Features
@@ -36,6 +38,7 @@ git clone https://github.com/pbain63/tic-tac-toe.git
 
 
 tic-tac-toe/  
+├── assets
 ├── index.html          # Main HTML structure  
 ├── style.css           # Styling  
 ├── script.js           # Game logic & DOM handling  
