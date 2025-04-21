@@ -1,10 +1,58 @@
-# Project_Tic-Tac-Toe
-The "Tic-Tac-Toe App" allows users to input the names of two players or play by default. The game shows wins or draws and resets the game to play again.
+# Tic Tac Toe Game
+
+A browser-based Tic Tac Toe game built with HTML, CSS, and JavaScript, following modular design principles.
+
+<!-- Tic Tac Toe Screenshot: -->
 
 
-Live preview link:
+## Features
+
+✅ Two-player mode (X and O) with customizable names.
+✅ Responsive design works on desktop and mobile.
+✅ Win/tie detection with dynamic result announcements.
+✅ Restart game functionality with a button.
+✅ Minimal global code using factory functions and IIFE modules.
+✅ DOM manipulation to dynamically update the game board.
+
+### How It Works
+
+GameBoard: Manages the board state (3x3 array) and validates moves.
+
+Player Factory: Creates player objects (name, marker).
+
+Game Controller: Handles turn logic, win checks, and game flow.
+
+Display Controller: Renders the board and handles DOM events.
+
+## Installation
+Clone the repo:
+
+sh
+git clone https://github.com/your-username/tic-tac-toe.git
+Open index.html in your browser.
+
+## Code Structure
+
+plaintext
+tic-tac-toe/  
+├── index.html          # Main HTML structure  
+├── style.css           # Styling  
+├── script.js           # Game logic & DOM handling  
+└── README.md  
+
+## What I Learned
+
+Modular JavaScript: Used factory functions and IIFE to avoid global scope pollution.
+
+Separation of concerns: Split logic into gameboard, players, and display modules.
+
+DOM manipulation: Dynamically updated the UI based on game state.
+
+Event delegation: Efficiently handled click events for game squares.
+
+Live Demo:
 
 https://pbain63.github.io/Project_Tic-Tac-Toe/
 
 
-Technology: HTML5, CSS, JavaScript
+Technologies: HTML5, CSS3, JavaScript
