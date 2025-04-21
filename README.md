@@ -42,6 +42,7 @@ git clone https://github.com/pbain63/tic-tac-toe.git
 
 tic-tac-toe/  
 ├── assets
+
 ├── index.html          # Main HTML structure  
 ├── style.css           # Styling  
 ├── script.js           # Game logic & DOM handling  
