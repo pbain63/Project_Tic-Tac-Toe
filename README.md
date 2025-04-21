@@ -2,7 +2,7 @@
 
 A browser-based Tic Tac Toe game built with HTML5, CSS3, and JavaScript, following modular design principles.
 
-### Live Demo:
+## Live Demo:
 
 https://pbain63.github.io/Project_Tic-Tac-Toe/
 
